@@ -1,0 +1,27 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>이력관리-w.잔망루피</title>
+</head>
+<body>
+    <div style="display:flex; align-items:center;">
+        <a href="http://192.168.56.101:8000/resume/"><img src="{% static 'rooprich.jpg' %}" style="width:250px;height:200px;"></a>
+        <h3 style="text-align:center; width:100%; margin-right:10%;">잔망 루피와 함께하는 행복한 이력관리</h3>
+    </div>
+    <!-- 네비게이션바 넣을 부분 -->
+    {% include "navbar.html" %}
+<!-- 기본 템플릿 안에 삽입될 내용 Start -->
+    {% block content %}
+    {% endblock %}
+<!-- 기본 템플릿 안에 삽입될 내용 End -->
+<!-- 자바스크립트 Start -->
+{% block script %}
+{% endblock %}
+<!-- 자바스크립트 End -->
+</body>
+</html>
